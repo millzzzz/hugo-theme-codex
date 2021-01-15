@@ -1,5 +1,5 @@
 {{ define "stylesheets" }}
-<link rel="stylesheet" href="/css/post.css" />
+<link rel="stylesheet" href="/css/post.css" /> 
 {{ end }}
 
 
@@ -8,25 +8,7 @@
 <div class="single__container">
   {{ .Content }}
 </div>
-<!-- {{ if .Params.toc }}
-<div class="toc-container">
-  {{ if .Site.Params.showPageTitleInTOC }} <div class="toc-post-title">{{ .Title }}</div> {{ end }}
-  {{ .TableOfContents }}
-</div>
-{{ end }} -->
 
-<!-- {{ define "scripts" }}
-{{/* Hardcode a specific prismjs version to avoid a redirect on every page load. */}}
-<script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
-
-{{/* Automatically loads the needed languages to highlight the code blocks. */}}
-<script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
-  data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
-
-{{ if .Params.toc }}
-<script src="/js/table-of-contents.js"></script>
-{{ end }} -->
-
-{{ partial "social-icons.html" .}}
+<!-- {{ partial "social-icons.html" .}}  -->
 
 {{ end }}
